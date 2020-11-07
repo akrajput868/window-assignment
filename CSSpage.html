@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title>CSS</title>
+        <link rel="stylesheet" href="project1.css">
+    </head>
+    <body>
+        <article>
+        <img src="css logo.jpg" alt="Logo">
+        <h1>CSS</h1>
+        <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+        </ul>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation 
+            of a document written in a markup language such as HTML.CSS is a cornerstone technology 
+            of the World Wide Web, alongside HTML and JavaScript.</p>
+        <p>CSS is designed to enable the separation of presentation and content, including layout, colors, 
+            and fonts. This separation can improve content accessibility, provide more flexibility and 
+            control in the specification of presentation characteristics, enable multiple web pages to share 
+            formatting by specifying the relevant CSS in a separate .css file which reduces complexity and 
+            repetition in the structural content as well as enabling the .css file to be cached to improve 
+            the page load speed between the pages that share the file and its formatting.</p>
+        
+<hr>        
+            <h2>Advantages of CSS</h2>
+            <pre>
+            • The use of CSS separates document layout from document content.
+            
+            – Different people can be responsible for the two parts.
+            
+            – Document author can focus on content.
+            
+            – Graphic designer can focus on layout.
+            
+            • A single file can control the look of an entire web site.
+            
+            – Easy to modify look of web site without affecting its contents.
+            
+            – Easy to obtain a consistent look (the R in CRAP)
+            
+            • If done correctly, documents degrade gracefully on platforms that
+             don't support visual formatting.
+            </pre>
+<hr>
+            <h2>Disadvantages of CSS</h2>
+            <pre>
+            • More to learn
+            – CSS is powerful but complex.
+            
+            • Not fully supported on some browsers
+            – Even some modern browsers are not fully CSS 2 compliant.
+            
+            • The formatting is separated from the document
+            – Makes it hard to write a document and format it simultaneously.
+            </pre>
+<hr>
+            <h2>How to Write a Document</h2>
+            <pre>
+
+            <h4> 1.Decide what you want to write</h4>
+            ● First and foremost the content of the document is important.
+            
+            ● Decide on the logical structure of the document.
+            
+           <h4> 2.Write it</h4>
+            ● Write the document content.
+            
+            ● Markup the document's logical structure.
+            
+           <h4> 3.Format it</h4>
+            ● Use CSS to do formatting
+            
+            ● Add other formatting-specific data (e.g., navigation).
+            
+            ● Points 1 and 2 should take the majority of the time.
+            </pre>
+<hr>
+           <h2> Using CSS</h2>
+           <pre>
+            • There are three ways to use CSS.
+            
+            <h3>• External Style Sheets</h3>
+            – Uses the LINK tag (in the document HEAD)
+            
+            link rel=”stylesheet” href=”../morin.css” type=”text/css”
+            
+           <h3> • Inline Style Sheets</h3>
+            – The STYLE tag (in the document HEAD)
+            
+            style type=”text/css”
+            
+            CSS information goes here
+            
+            style
+            
+            <h4>CSS with Class</h4>
+            • (Almost) all HTML tags can have an optional.
+            
+            CLASS attribute
+            • This works nicely in conjunction with CSS:
+            
+            style type=”text/css”>
+            
+            p.blogentry {
+            
+            font-size: 12pt;
+            
+            font-family: “Luxi Serif”, serif;
+            
+            }
+            
+            /style>
+            
+            ...
+            Today was the best day ever ...
+            
+            <h4>CSS with IDs</h4>
+            • Similarly, almost all HTML tags can have an ID.
+            
+            attribute:
+            style type=”text/css”>
+            
+            #menubar {
+            
+            font-size: 12pt;
+            
+            font-family: “Luxi Serif”, serif;
+            
+            }
+            
+            /style>
+            
+            ...
+            Item 1
+            ...
+            <h4>Notes on CLASS and ID</h4>
+            • Use CLASS when a document contains (or may contain) many items of this type.
+            
+            – E.g.: blogEntry, nameList, properName.
+            
+            • Use ID when a document can only contain one item of this type.
+            
+            – E.g. pageTitle, mainNavigationBar
+            
+            • Choose CLASS and ID names wisely.
+            
+            – Good: Pat Morin.
+            
+            – Bad: Pat Morin
+            
+            <h4>The DIV and SPAN tags</h4>
+            • HTML has 2 tags, DIV and SPAN, that are.
+            
+            specifically used with CSS and CLASS and ID attributes.
+            
+            • A DIV tag contains a block of text.
+            
+            – Like a paragraph, section heading, or title.
+            
+            • A SPAN tag contains a short piece of text within a block
+            
+            – Like a proper name, or a dollar amount.
+            
+            <h3>Example of DIV and SPAN</h3>
+            On his way to school,
+            
+            Uncle Rico
+            
+            stopped at the local groceteria and spent.
+            
+            $4.55 on milk, bread, and honey.
+            
+            This document was written by.
+            
+            Pedro Sanchez
+            
+            on Jan. 9th, 2007.
+            
+            Typeface: font-family
+            • Consists of a comma-separated list of font names.
+            
+            h1 { font-family: “Times New Roman”,
+            
+            “ Luxi Serif”,
+            
+            “ DejaVu LGC Serif”,
+            
+            serif;
+            
+            }
+            
+            • Not all fonts are available on all systems.
+            
+            – Browser will try fonts in order that they are specified.
+            
+            • Always make the last option one of the generic
+            
+            fonts: serif, sans-serif, cursive, fantasy, or monospace
+            
+            Font Size: font-size
+            • Specified in one of the CSS size units.
+            
+            – 1em is the width of a letter m (relative to surrounding text).
+            
+            – 1pt is a standard typographic point (1/72 inches)
+            
+            – 1px is one screen pixel.
+            
+            – Keywords: xx-small, x-small, small, medium, large, x-large, xx-large are browser dependant
+            
+            – Percentages: XXX% relative to the surrounding code.
+            
+            • Points and pixels are extremely accurate but not resizeable
+            
+            h1 { font-size: 200%; }
+            
+            h2 { font-size: large; }
+            
+            h3 { font-size: medium; }
+            
+            Bold Fonts: font-weight
+            • Can be one of normal, bold, bolder,
+            
+            lighter, 100, 200, ..., 900
+            
+            h1 { font-weight: bold;
+            
+            font-size: 200%;
+            
+            }
+            
+            h2 { font-weight: bold;
+            
+            font-size: medium;
+            
+            }
+            
+            The Font Style: font-style
+            • Can be one of normal, italic, or oblique.
+            
+            • An italic font is usually slanted and maybe has
+            
+            .some curls added
+            • An oblique font is a skew transformation of a regular font (not well supported)
+            
+            em { font-style: italic; }
+            
+            h1 { font-family: sans-serif;
+            
+            font-weight: bold;
+            
+            font-style: italic;
+            
+            }
+            
+            Other Font Properties
+            • Use font-variant for producing small caps.
+            
+            • Use font-stretch to expand or condense a font
+            
+            • Use font as a shorthand to set all font properties at once
+            
+            h1 { font: italic
+            
+            small-caps
+            
+            bold 12pt sans-serif;
+        </pre>
+        </article>
+        <footer>
+            <p>HTMH PROJECT <br><a href="htmlpage.html"> Back To Home</a> <br><a href="home.html">Back To The HTML Page</a></p>
+        </footer>
+    </body>
+</html>

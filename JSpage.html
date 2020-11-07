@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title>JS</title>
+        <link rel="stylesheet" href="project1.css">
+    </head>
+    <body>
+      <article>
+        <img src="js logo.jpg" alt="Logo">
+        <h1>JS</h1>
+        <ul>
+            <li>JavaScript can add/change/remove HTML elements</li>
+            <li>JavaScript can add/change/remove HTML attributes</li>
+            <li>JavaScript can add/change/remove CSS styles</li>
+            <li>JavaScript can react to HTML events</li>
+            <li>JavaScript can add/change/remove HTML events</li>
+        </ul>
+        <p>JavaScript is the Programming Language for the Web. <br>
+            JavaScript can update and change both HTML and CSS. <br>
+            JavaScript can calculate, manipulate and validate data.</p>
+<hr>
+        <h2>JavaScript Keywords</h2>
+        <pre>
+            -JavaScript statements often start with a keyword to 
+             identify the JavaScript action to be performed
+            -Here is a list of some of the keywords you will learn
+            1. break	->Terminates a switch or a loop
+            2. continue	->Jumps out of a loop and starts at the top
+            3. debugger	->Stops the execution of JavaScript, and calls (if available)
+                          the debugging function
+            4. do ... while	->Executes a block of statements, and repeats the block,
+                              while a condition is true
+            5. for	->Marks a block of statements to be executed, as long as a condition
+                 is true
+            6. function	->Declares a function
+            7. if ... else	->Marks a block of statements to be executed, depending on a
+                          condition
+            8. return	->Exits a function
+            9. switch	->Marks a block of statements to be executed, depending on
+                      different cases
+            10. try ... catch	->Implements error handling to a block of statements
+            11. var	->Declares a variable
+        </pre>
+<hr>
+            <h2>JavaScript Operators</h2>
+            <pre>
+                -JavaScript uses arithmetic operators ( + - * / ) to compute values.
+            </pre>
+<hr>
+            <h2>JavaScript Expressions</h2>
+            <pre>
+                -An expression is a combination of values, variables, and operators,
+                 which computes to a value.
+                -The computation is called an evaluation.
+                <h3>Example</h3>
+                5 * 10 evaluates to 50
+            </pre>
+<hr>
+            <h2>JavaScript Comments</h2>
+            <pre>
+                -All JavaScript statements are "executed".
+                -Code after double slashe // or between /* and */ is treated as a comment.
+                -Comments are ignored, and will not be executed.
+            </pre>            
+<hr>
+            <h2>JavaScript Data Types</h2>
+            <pre>
+                -JavaScript variables can hold many data types: numbers, strings,
+                 objects and more.
+                 <h3>Example</h3>
+                length = 16;                               // Number
+                lastName = "Johnson";                      // String
+                x = {firstName:"John", lastName:"Doe"};    // Object
+            </pre>
+<hr>
+            <h2>JavaScript Functions</h2>
+            <pre>
+                -A JavaScript function is a block of code designed to perform
+                 a particular task.
+                -A JavaScript function is executed when "something" invokes it (calls it).
+                <h3>Syntax</h3>
+                function name(parameter1, parameter2, parameter3,.......) {
+                    // code to be executed
+                  }
+                <h3>Example</h3>
+                function myFunction(p1, p2) {
+                    return p1 * p2;   // The function returns the product of p1 and p2
+                  }
+                <h4>Function Return</h4>
+                -When JavaScript reaches a return statement, the function will stop
+                 executing.
+                 <h3>Example</h3>
+                 var x = myFunction(4, 3);   // Function is called
+
+                function myFunction(a, b) {
+                return a * b;             // Function returns the product of a and b
+                }
+            </pre>      
+<hr>
+            <h2>Array</h2>
+            <pre>
+                -An array is a special variable, which can hold more than one
+                 value at a time.
+                -If you have a list of items (a list of car names, for example),
+                 storing the cars in single variables 
+                <h3>Syntax</h3>
+                var array_name = [item1, item2, ...];
+                <h3>Example</h3>
+                var cars = ["Saab", "Volvo", "BMW"];
+            </pre>
+<hr>
+            <h2>Statement</h2>
+            <pre>
+                <h4>Switch Statement</h4>
+                The switch statement is used to perform different actions
+                 based on different conditions
+                <h3>Syntax</h3>
+                switch(expression) {
+                    case x:
+                      // code block
+                      break;
+                    case y:
+                      // code block
+                      break;
+                    default:
+                      // code block
+                  }
+                <h4>break Keyword</h4>
+                -When JavaScript reaches a break keyword, it breaks out of the
+                 switch block.
+                -This will stop the execution of inside the block.
+                -It is not necessary to break the last case in a switch block.
+                 The block breaks (ends) there anyway.
+            </pre>
+<hr>
+            <h2>Loops</h2>
+            <pre>
+                -Loops are handy, if you want to run the same code over
+                 and over again, each time with a different value.
+                -JavaScript supports different kinds of loops:
+                1. for - loops through a block of code a number of times
+                2. for/in - loops through the properties of an object
+                3. for/of - loops through the values of an iterable object
+                4. while - loops through a block of code while a specified
+                 condition is true
+                5. do/while - also loops through a block of code while a
+                 specified condition is true
+                <h4>For Loop</h4>
+                The for loop has the following syntax:
+                for (statement 1; statement 2; statement 3) {
+                    // code block to be executed
+                  }
+                <h4>For/In Loop</h4>
+                The JavaScript for/in statement loops through the properties of an object
+                for (variable in iterable) {
+                    // code block to be executed
+                  }
+                <h4>For/Of Loop</h4>
+                for (variable of iterable) {
+                    // code block to be executed
+                  }
+                <h4>While Loop</h4>
+                The while loop loops through a block of code as long as a specified
+                 condition is true
+                <h3>Syntax</h3>
+                while (condition) {
+                    // code block to be executed
+                  }
+                <h4>Do/While Loop</h4>
+                The do/while loop is a variant of the while loop. This loop will
+                 execute the code block once, before checking if the condition is
+                 true, then it will repeat the loop as long as the condition is true
+                <h3>Syntax</h3>
+                do {
+                    // code block to be executed
+                  }
+                  while (condition);
+            </pre>
+  <hr>
+            <h2>JavaScript Classes</h2>
+            <pre>
+              -Use the keyword class to create a class.
+              -Always add a method named constructor():
+              <h3>Syntax</h3>
+              class ClassName {
+                constructor() { ... }
+              }
+              <h4>Class Methods</h4>
+              -Class methods are created with the same syntax as object methods.
+              -Use the keyword class to create a class.
+              -Always add a constructor() method.
+              -Then add any number of methods
+              <h3>Syntax</h3>
+              class ClassName {
+                constructor() { ... }
+                method_1() { ... }
+                method_2() { ... }
+                method_3() { ... }
+                }
+              }
+            </pre>
+            </article>
+            <footer>
+              <p>HTMH PROJECT <br><a href="htmlpage.html"> Back To Home</a> <br><a href="home.html">Back To The HTML Page</a></p>
+          </footer>
+    </body>
+</html>
